@@ -90,6 +90,7 @@ public class Main {
         mercedes.getCandidatos().insertarCandidato(candidato10); //17 puntos
         mercedes.getCandidatos().imprimirListaCandidatos();
         System.out.println();
+
         mercedes.escogerPiloto();
         System.out.println("Piloto 1 agregado al arbol de pilotos Mercedes");
         System.out.println();
@@ -98,13 +99,14 @@ public class Main {
 
         System.out.println();
         System.out.print("Escoger nuevo piloto de los candidatos de Ferrari: ");
-        ferrari.getCandidatos().insertarCandidato(candidato11); //22 puntos
-        ferrari.getCandidatos().insertarCandidato(candidato12); //103 puntos
-        ferrari.getCandidatos().insertarCandidato(candidato13); //88 puntos
-        ferrari.getCandidatos().insertarCandidato(candidato14); //99 puntos
-        ferrari.getCandidatos().insertarCandidato(candidato15); //17 puntos
+        ferrari.getCandidatos().insertarCandidato(candidato11); //10 puntos
+        ferrari.getCandidatos().insertarCandidato(candidato12); //200 puntos
+        ferrari.getCandidatos().insertarCandidato(candidato13); //41 puntos
+        ferrari.getCandidatos().insertarCandidato(candidato14); //8 puntos
+        ferrari.getCandidatos().insertarCandidato(candidato15); //71 puntos
         ferrari.getCandidatos().imprimirListaCandidatos();
         System.out.println();
+        
         ferrari.escogerPiloto();
         System.out.println("Piloto 1 agregado al arbol de pilotos Mercedes");
         System.out.println();

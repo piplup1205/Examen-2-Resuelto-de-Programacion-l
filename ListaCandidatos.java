@@ -6,6 +6,7 @@ public class ListaCandidatos {
         this.primero = null;
     }
 
+    //Ejercicio 2
     public Candidato escogerPiloto()  
     {
         Candidato candidatoElegido = null;
@@ -66,6 +67,7 @@ public class ListaCandidatos {
 
     }
  
+    //Para mostrar como se sacan los que son escogidos como pilotos (El estado de la lista de candidatos)
     public void imprimirListaCandidatos()
     {
         if (this.primero == null) 
