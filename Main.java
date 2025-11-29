@@ -20,6 +20,15 @@ public class Main {
         Candidato candidato6 = new Candidato("Josue", "Austria", 22);
         Candidato candidato7 = new Candidato("Pablo", "Francia", 103);
         Candidato candidato8 = new Candidato("Eduardo", "Italia", 88);
+        Candidato candidato9 = new Candidato("Joshua", "Alemania", 99);
+        Candidato candidato10 = new Candidato("Marlen", "Chile", 17);
+
+         //Candidatos para Ferrari
+        Candidato candidato11 = new Candidato("Luis", "CR", 10);
+        Candidato candidato12 = new Candidato("Valeria", "Panama", 200);
+        Candidato candidato13 = new Candidato("Silvia", "Guatemala", 41);
+        Candidato candidato14 = new Candidato("Hernan", "China", 8);
+        Candidato candidato15 = new Candidato("Luijo", "Japon", 71);
 
         //Pilotos
         Piloto piloto1 = new Piloto("Mario", "Venezuela", 67, 2);
@@ -77,6 +86,8 @@ public class Main {
         mercedes.getCandidatos().insertarCandidato(candidato6); //22 puntos
         mercedes.getCandidatos().insertarCandidato(candidato7); //103 puntos
         mercedes.getCandidatos().insertarCandidato(candidato8); //88 puntos
+        mercedes.getCandidatos().insertarCandidato(candidato9); //99 puntos
+        mercedes.getCandidatos().insertarCandidato(candidato10); //17 puntos
         mercedes.getCandidatos().imprimirListaCandidatos();
         System.out.println();
         mercedes.escogerPiloto();
@@ -84,6 +95,21 @@ public class Main {
         System.out.println();
         System.out.println("Candidatos no elegidos:");
         mercedes.getCandidatos().imprimirListaCandidatos(); //Imprime la lista para verificar que si se borran los elegidos
+
+        System.out.println();
+        System.out.print("Escoger nuevo piloto de los candidatos de Ferrari: ");
+        ferrari.getCandidatos().insertarCandidato(candidato11); //22 puntos
+        ferrari.getCandidatos().insertarCandidato(candidato12); //103 puntos
+        ferrari.getCandidatos().insertarCandidato(candidato13); //88 puntos
+        ferrari.getCandidatos().insertarCandidato(candidato14); //99 puntos
+        ferrari.getCandidatos().insertarCandidato(candidato15); //17 puntos
+        ferrari.getCandidatos().imprimirListaCandidatos();
+        System.out.println();
+        ferrari.escogerPiloto();
+        System.out.println("Piloto 1 agregado al arbol de pilotos Mercedes");
+        System.out.println();
+        System.out.println("Candidatos no elegidos:");
+        ferrari.getCandidatos().imprimirListaCandidatos();
         
         System.out.println();
         System.out.println();
@@ -93,6 +119,12 @@ public class Main {
         System.out.println("Su nacionalidad es: " + mejor.getNacionalidad());
         System.out.println("Su puntaje es: " + mejor.getPuntosObtenidos());
         System.out.println("Ha participado en " + mejor.getCantidadCompetencias()+ " competencias");
+
+        System.out.println();
+        System.out.println();
+        //Para escoger al mejor piloto (Segunda vez)
+        Piloto mejor1 = listaEquipos.seleccionarMejorPiloto();
+        System.out.println("El mejor piloto es: " + mejor1.getNombre());
 
         //EJERCICIO 4
         System.out.println();

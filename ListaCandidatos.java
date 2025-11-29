@@ -6,7 +6,7 @@ public class ListaCandidatos {
         this.primero = null;
     }
 
-    public Candidato escogerPiloto()  //REVISAR
+    public Candidato escogerPiloto()  
     {
         Candidato candidatoElegido = null;
 
