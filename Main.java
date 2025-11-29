@@ -25,7 +25,7 @@ public class Main {
 
          //Candidatos para Ferrari
         Candidato candidato11 = new Candidato("Luis", "CR", 10);
-        Candidato candidato12 = new Candidato("Valeria", "Panama", 200);
+        Candidato candidato12 = new Candidato("Valeria", "Panama", 100);
         Candidato candidato13 = new Candidato("Silvia", "Guatemala", 41);
         Candidato candidato14 = new Candidato("Hernan", "China", 8);
         Candidato candidato15 = new Candidato("Luijo", "Japon", 71);
@@ -97,6 +97,7 @@ public class Main {
         System.out.println("Candidatos no elegidos:");
         mercedes.getCandidatos().imprimirListaCandidatos(); //Imprime la lista para verificar que si se borran los elegidos
 
+        System.out.println();
         System.out.println();
         System.out.print("Escoger nuevo piloto de los candidatos de Ferrari: ");
         ferrari.getCandidatos().insertarCandidato(candidato11); //10 puntos
