@@ -101,6 +101,7 @@ public class Main {
         int energiaDisponible = 5;
         EjercicioBacktracking bt = new EjercicioBacktracking(costos, puntajes, energiaDisponible);
         int puntajeMaximo = bt.resolver(0, energiaDisponible, 0);
+        System.out.println("EJERCICIO 4");
         System.out.println("Mejor puntaje obtenido: " + puntajeMaximo);
 
     }
